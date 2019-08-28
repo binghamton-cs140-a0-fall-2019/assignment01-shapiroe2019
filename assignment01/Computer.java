@@ -31,10 +31,22 @@ public class Computer {
 		SSD = ssd;
 		purchasePrice = purchPrice;
 	}
+	public static void main(String[] args){
+		Computer a = new Computer("Dell","Intel 80486DX2",500,1600,true,1000);
+		Computer b = new Computer("Dell","Intel 80486DX2",500,800,true,1000);
+		Computer c = new Computer("Dell","Intel 80486DX2",500,1600,false,1000);
+		Computer d = new Computer("Dell","Intel 80486DX2",500,800,false,1000);
+		System.out.println();
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
 	/**
 	 * Getter method for the brand name of this computer
 	 * @return the brand of this computer
 	 */
+
 	public String getBrand() {
 		return brand;
 	}
